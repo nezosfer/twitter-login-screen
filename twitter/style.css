@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+
+.main-page{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
+
+
+}
+.left{
+    grid-column: 1/2;
+    grid-row:1/2;
+    background: url(images/twitterbg.png) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    position: relative;
+}
+.left__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.left__content svg{
+    fill: #fff;
+    width:90%;
+    height: 380px; 
+}
+.right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px;
+    min-width: 45vw;
+}
+.right-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 437px;
+    max-width: 760px;
+    height: 100%;
+    width: 100%;
+}
+.right-site-wrapper {
+padding-bottom: 12px;
+}
+.right-site-wrapper svg {
+    fill:rgb(29,161,242);
+}
+.middle-heading {
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    letter-spacing: 3.8px;
+    line-height: 50px;
+    overflow-wrap: break-word;
+    color: rgb(15,20,25);
+}
+.right-middle-content h5 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    line-height: 1.3125;
+    overflow-wrap: break-word;
+    color: rgb(15, 20, 25);
+}
+.btn-link {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 20px;
+    text-align:center;
+    min-height: 48px;
+    max-width: 380px;
+    padding-top: 13px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 9999px;
+}
+.sign-up-btn {
+    background-color: rgb(29, 161, 242);
+    color: #fff;
+    border: 0.1rem solid rgba(0,0,0,0);
+    transition:background-color 0.3s;
+}
+.sign-up-btn:hover {
+    background-color: rgb(29, 145, 218);
+}
+.log-in-btn {
+    color: rgb(29, 161, 242);
+    background-color: #fff;
+    border: 0.1rem solid rgb(29, 161, 242);
+    transition:background-color 0.3s;
+}
+.log-in-btn:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+.main-page-footer {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 15px 16px;
+    
+}
+.main-page-footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-page-footer a {
+    color: rgb(91, 112, 131);
+    padding-right: 16px;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    line-height: calc(19.6975px);
+}
+.main-page-footer a:hover{
+    text-decoration: underline;
+}
+.main-page-footer span {
+    color: rgb(91, 112, 131);
+    font-size: 16px;
+    line-height: calc(19.6875px);
+}
